@@ -6,14 +6,21 @@ function adicionar() {
   const inputNome = document.getElementById('nome-amigo');
   const nome = inputNome.value.trim();
 
-  if (nome !== '') {
-    amigos.push(nome);
-    atualizarListaAmigos();
-    inputNome.value = ''; // Limpa o campo de entrada
-  } else {
+  if (nome === '') {
     alert('Por favor, digite um nome válido.');
+    return;
   }
+
+  if (amigos.includes(nome)) {
+    alert('Este nome já foi adicionado.');
+    return;
+  }
+
+  amigos.push(nome);
+  atualizarListaAmigos();
+  inputNome.value = ''; // Limpa o campo de entrada
 }
+
 
 // Função para atualizar a lista de amigos no DOM
 function atualizarListaAmigos() {
