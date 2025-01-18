@@ -2,7 +2,7 @@ class Musica:
     nome = ''
     artista = ''
     duracao = int
-    
+
 musica1 = Musica()
 musica1.nome = 'Bohemian Rhapsody'
 musica1.artista = 'Queen'
@@ -17,3 +17,4 @@ musica3 = Musica()
 musica3.nome = 'Shape of You'
 musica3.artista = 'Ed Sheeran'
 musica3.duracao = 234
+
