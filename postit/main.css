@@ -1,0 +1,21 @@
+ /* Estilos personalizados para complementar o Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* cinza claro */
+        }
+        /* Efeito de transição suave para os post-its */
+        .post-it {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        /* Garante que a área de arrastar ocupe toda a coluna */
+        .post-it-stack {
+            min-height: 200px;
+        }
+        /* Estilo para o placeholder enquanto arrasta */
+        .sortable-ghost {
+            opacity: 0.4;
+            background: #cbd5e1;
+        }
+        .sortable-drag {
+            opacity: 1 !important;
+        }
